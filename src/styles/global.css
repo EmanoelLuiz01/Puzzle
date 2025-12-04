@@ -19,6 +19,12 @@ h1 {
  	font-weight: bold;
  	font-family: verdana;
 }
+ul {
+  list-style-type: none;
+  padding-left: 0; /* opcional: remove o recuo da lista */
+  font-family: 'Roboto', sans-serif;
+}
+
 
 .menu {
     display: block;
