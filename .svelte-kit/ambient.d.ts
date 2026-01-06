@@ -32,6 +32,7 @@ declare module '$env/static/private' {
 	export const npm_config_user_agent: string;
 	export const XDG_SESSION_TYPE: string;
 	export const npm_node_execpath: string;
+	export const CLUTTER_DISABLE_MIPMAPPED_TEXT: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const HOME: string;
@@ -49,7 +50,6 @@ declare module '$env/static/private' {
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const COLORTERM: string;
 	export const COLOR: string;
-	export const GNOME_KEYRING_CONTROL: string;
 	export const NVM_DIR: string;
 	export const IM_CONFIG_PHASE: string;
 	export const WAYLAND_DISPLAY: string;
@@ -140,6 +140,7 @@ declare module '$env/dynamic/private' {
 		npm_config_user_agent: string;
 		XDG_SESSION_TYPE: string;
 		npm_node_execpath: string;
+		CLUTTER_DISABLE_MIPMAPPED_TEXT: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		HOME: string;
@@ -157,7 +158,6 @@ declare module '$env/dynamic/private' {
 		DBUS_SESSION_BUS_ADDRESS: string;
 		COLORTERM: string;
 		COLOR: string;
-		GNOME_KEYRING_CONTROL: string;
 		NVM_DIR: string;
 		IM_CONFIG_PHASE: string;
 		WAYLAND_DISPLAY: string;
