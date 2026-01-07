@@ -16,6 +16,7 @@
 	export let data_2 = null;
 
 	if (!browser) {
+		// svelte-ignore state_referenced_locally
 		setContext('__svelte__', stores);
 	}
 
@@ -39,20 +40,26 @@
 		mounted = true;
 		return unsubscribe;
 	});
+
+	
 </script>
 
 {#if constructors[1]}
-	<svelte:component this={constructors[0]} bind:this={components[0]} data={data_0}>
-		{#if constructors[2]}
-			<svelte:component this={constructors[1]} bind:this={components[1]} data={data_1}>
-				<svelte:component this={constructors[2]} bind:this={components[2]} data={data_2} {form} />
-			</svelte:component>
-		{:else}
-			<svelte:component this={constructors[1]} bind:this={components[1]} data={data_1} {form} />
-		{/if}
-	</svelte:component>
+	<svelte:component this={constructors[0]} bind:this={components[0]} data={data_0} params={page.params}>
+						{#if constructors[2]}
+							<svelte:component this={constructors[1]} bind:this={components[1]} data={data_1} params={page.params}>
+												<svelte:component this={constructors[2]} bind:this={components[2]} data={data_2} {form} params={page.params} />
+											</svelte:component>
+						
+						{:else}
+							<svelte:component this={constructors[1]} bind:this={components[1]} data={data_1} {form} params={page.params} />
+						
+						{/if}
+					</svelte:component>
+
 {:else}
-	<svelte:component this={constructors[0]} bind:this={components[0]} data={data_0} {form} />
+	<svelte:component this={constructors[0]} bind:this={components[0]} data={data_0} {form} params={page.params} />
+
 {/if}
 
 {#if mounted}

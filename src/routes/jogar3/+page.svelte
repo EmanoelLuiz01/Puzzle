@@ -4,9 +4,9 @@
   import '../../styles/jogar.css'; 
 
   // Configuração fixa para o Nível 1
-  const imagem = "/images/n1.png"; 
-  let grid = 3; // 3x3
-  let size = 150; // Tamanho de cada peça em pixels
+  const imagem = "/images/n3.png"; 
+  let grid = 8; // 3x3
+  let size = 60; // Tamanho de cada peça em pixels
   
   // Criamos as peças baseadas no ID (0 a 8)
   let tiles = Array.from({ length: grid * grid }, (_, i) => ({ id: i }));
@@ -46,7 +46,7 @@
 </script>
 
 <main>
-  <h1>Nível 1 - </h1>
+  <h1>Nível 3 </h1>
 
   <div class="board" style="grid-template-columns: repeat({grid}, {size}px);">
     {#each tiles as tile, i (tile.id)}
@@ -70,7 +70,6 @@
   </div>
 
   <div class="controls">
-    
     <div class="botoes">
       <a class="menu" href="/">Menu</a>
     </div>

@@ -39,7 +39,7 @@ ul {
     margin-top: 30px; /* empurra para baixo */
     margin-bottom: 5px;
     width: 20%;
-    background-color: rgb(37, 15, 15);
+    background-color: rgb(225, 225, 225);
     text-align: center;
     text-decoration: none;
     color: black;
@@ -87,4 +87,3 @@ img.sobre {
   border-radius: 10px
 
 }
-

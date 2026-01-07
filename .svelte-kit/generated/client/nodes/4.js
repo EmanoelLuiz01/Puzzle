@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/jogar/+page.svelte";
+export { default as component } from "../../../../src/routes/jogar3/+layout.svelte";

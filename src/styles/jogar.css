@@ -40,7 +40,7 @@ body {
   margin: 0;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* IMAGEM DE FUNDO EMBAÇADA */
