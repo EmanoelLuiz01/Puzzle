@@ -8,7 +8,6 @@
 <p>Emanoel Luiz – <a href="mailto:els31@discente.ifpe.edu.br">els31@discente.ifpe.edu.br</a></p>
 <p>Francylene Oliveira – <a href="mailto:fos4@discente.ifpe.edu.br">fos4@discente.ifpe.edu.br</a></p>
 <p>Hevelyn Neves – <a href="mailto:hnsf@discente.ifpe.edu.br">hnsf@discente.ifpe.edu.br</a></p>
-<p>Maria Beatriz – <a href="mailto:mbap@discente.ifpe.edu.br">mbap@discente.ifpe.edu.br</a></p>
 <p>Rhuan Erley – <a href="mailto:reps1@discente.ifpe.edu.br">reps1@discente.ifpe.edu.br</a></p>
 <p>Vinicyus Miguel – <a href="mailto:vmlp@discente.ifpe.edu.br">vmlp@discente.ifpe.edu.br</a></p>
 
