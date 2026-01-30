@@ -44,7 +44,7 @@
   // Embaralha assim que a página carrega
   onMount(shuffle);
 </script>
-
+<div class="background"></div>
 <main>
   <h1>Nível 2 - </h1>
 
@@ -72,6 +72,7 @@
   <div class="controls">
     <div class="botoes">
       <a class="menu" href="/">Menu</a>
+      <a class="menu" href="/level">Voltar</a>
     </div>
   </div>
 </main>

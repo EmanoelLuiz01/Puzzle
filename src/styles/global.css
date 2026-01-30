@@ -7,7 +7,7 @@ html, body {
 
 body {
   margin: 0;
-  padding: 0; /* ✅ */
+  padding: 0; 
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-color: lightyellow;
@@ -87,3 +87,41 @@ img.sobre {
   border-radius: 10px
 
 }
+.nomes p, h2{
+  color: black;
+}
+/*modal da pagina inicial*/
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal p{
+    color: black;
+}
+
+.modal-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px; /*mexer na largura da modal*/
+    min-height: 100px; /*mexer na altura do modal*/
+}
+
+.menu {
+    cursor: pointer;
+  }
+  button.menu {
+  border: none;
+}
+@media (max-width: 600px) {
+  .menu {
+    width: 35%;
+    font-size: 18px;
+  }
+}
+

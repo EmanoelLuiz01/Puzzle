@@ -44,11 +44,13 @@
   // Embaralha assim que a página carrega
   onMount(shuffle);
 </script>
-
+<div class="background"></div>
 <main>
   <h1>Nível 3 </h1>
 
-  <div class="board" style="grid-template-columns: repeat({grid}, {size}px);">
+  <div class="board" style="
+    grid-template-columns: repeat({grid}, minmax(0, {size}px));
+  ">
     {#each tiles as tile, i (tile.id)}
       <button 
         animate:flip={{ duration: 400 }}
@@ -69,9 +71,11 @@
     {/each}
   </div>
 
+
   <div class="controls">
     <div class="botoes">
       <a class="menu" href="/">Menu</a>
+      <a class="menu" href="/level">Voltar</a>
     </div>
   </div>
 </main>
