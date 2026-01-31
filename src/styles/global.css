@@ -84,10 +84,9 @@ img.sobre {
   display: inline-block;              /* ajusta ao conteúdo */
   background: rgba(255, 255, 255, 0.75);
   padding: 20px;
-  border-radius: 10px
-
+  border-radius: 10px;
 }
-.nomes p, h2{
+.nomes p, .nomes h2{
   color: black;
 }
 /*modal da pagina inicial*/
