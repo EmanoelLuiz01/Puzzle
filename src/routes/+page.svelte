@@ -1,5 +1,5 @@
 <script lang="ts">
-  let tituloDoJogo = "Igarabits";
+  let tituloDoJogo = "Canoa Grande";
   let modalAberta = false;
 </script>
 
