@@ -44,12 +44,12 @@ declare module '$env/static/private' {
 	export const GTK_MODULES: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
+	export const DBUS_STARTER_BUS_TYPE: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const GSM_SKIP_SSH_AGENT_WORKAROUND: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const COLORTERM: string;
 	export const COLOR: string;
-	export const GNOME_KEYRING_CONTROL: string;
 	export const NVM_DIR: string;
 	export const IM_CONFIG_PHASE: string;
 	export const WAYLAND_DISPLAY: string;
@@ -83,6 +83,7 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_script: string;
 	export const SSH_AUTH_SOCK: string;
 	export const SHELL: string;
+	export const INSIDE_NAUTILUS_PYTHON: string;
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
 	export const QT_ACCESSIBILITY: string;
@@ -95,6 +96,7 @@ declare module '$env/static/private' {
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const NVM_CD_FLAGS: string;
+	export const DBUS_STARTER_ADDRESS: string;
 	export const XDG_DATA_DIRS: string;
 	export const npm_config_global_prefix: string;
 	export const npm_command: string;
@@ -150,12 +152,12 @@ declare module '$env/dynamic/private' {
 		GTK_MODULES: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
+		DBUS_STARTER_BUS_TYPE: string;
 		SYSTEMD_EXEC_PID: string;
 		GSM_SKIP_SSH_AGENT_WORKAROUND: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		COLORTERM: string;
 		COLOR: string;
-		GNOME_KEYRING_CONTROL: string;
 		NVM_DIR: string;
 		IM_CONFIG_PHASE: string;
 		WAYLAND_DISPLAY: string;
@@ -189,6 +191,7 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_script: string;
 		SSH_AUTH_SOCK: string;
 		SHELL: string;
+		INSIDE_NAUTILUS_PYTHON: string;
 		npm_package_version: string;
 		npm_lifecycle_event: string;
 		QT_ACCESSIBILITY: string;
@@ -201,6 +204,7 @@ declare module '$env/dynamic/private' {
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
 		NVM_CD_FLAGS: string;
+		DBUS_STARTER_ADDRESS: string;
 		XDG_DATA_DIRS: string;
 		npm_config_global_prefix: string;
 		npm_command: string;

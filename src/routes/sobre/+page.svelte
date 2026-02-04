@@ -1,4 +1,4 @@
-<h1>Sobre</h1>
+<h1>Discentes</h1>
 
 <img class="sobre" src="/images/logoIFPE.png" alt="logo IPFE"/>
 <h2>Grupo</h2> 

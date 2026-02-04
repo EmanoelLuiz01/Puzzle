@@ -100,11 +100,12 @@ h1 {
 */
 
 
-@media (max-width: 600px) { /*até 600px de largura*/
+@media (max-width: 500px) { /*até 600px de largura*/
   .board {
     /* Reduz o tabuleiro para 75% do tamanho original sem mexer na "natureza" da imagem, só faz diminuir */
-    transform: scale(0.75); 
+    transform: scale(0.75);
     transform-origin: top center;
+    margin: 20px auto;
     max-width: calc(100vw - 20px); /*garante que o contorno do JOGAR3 fique o mais certo possivel*/
   }
 }
@@ -114,7 +115,6 @@ h1 {
     /* Reduz ainda mais em telas muito pequenas */
     transform: scale(0.6);
     transform-origin: top center;
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin: 10px auto;
   }
 }
