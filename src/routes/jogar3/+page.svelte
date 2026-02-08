@@ -4,7 +4,7 @@
   import '../../styles/jogar.css'; 
 
   // Configuração fixa para o Nível 1
-  const imagem = "/images/n3.png"; 
+  const imagem = "/images/n3.jpeg"; 
   let grid = 8; // 3x3
   let size = 60; // Tamanho de cada peça em pixels
   
@@ -12,6 +12,7 @@
   let tiles = Array.from({ length: grid * grid }, (_, i) => ({ id: i }));
 
   let firstSelection: number | null = null;
+  let showImage = false;
 
   function shuffle() {
     tiles = [...tiles].sort(() => Math.random() - 0.5);
@@ -39,6 +40,10 @@
     if (won) {
       setTimeout(() => alert("Parabéns! Você montou "), 300);
     }
+  }
+
+  function toggleImage() {
+    showImage = !showImage;
   }
 
   // Embaralha assim que a página carrega
@@ -75,7 +80,17 @@
   <div class="controls">
     <div class="botoes">
       <a class="menu" href="/">Menu</a>
+      <button on:click={toggleImage}> revelar imagem </button>
       <a class="menu" href="/level">Voltar</a>
     </div>
   </div>
+
+  {#if showImage}
+    <div class="modal-overlay" on:click={toggleImage}>
+      <div class="modal-box" on:click|stopPropagation>
+        <img src={imagem} alt="Imagem do quebra-cabeça" />
+        <button class="close-modal" on:click={toggleImage}>✕</button>
+      </div>
+    </div>
+  {/if}
 </main>

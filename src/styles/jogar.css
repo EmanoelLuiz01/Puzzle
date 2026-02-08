@@ -100,7 +100,7 @@ h1 {
 */
 
 
-@media (max-width: 500px) { /*até 600px de largura*/
+@media (max-width: 575.98px) { /*até 600px de largura*/
   .board {
     /* Reduz o tabuleiro para 75% do tamanho original sem mexer na "natureza" da imagem, só faz diminuir */
     transform: scale(0.75);
@@ -117,4 +117,60 @@ h1 {
     transform-origin: top center;
     margin: 10px auto;
   }
+}
+
+/* Modal para revelar imagem */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.modal-box {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.modal-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.close-modal:hover {
+  background-color: #cc0000;
 }
