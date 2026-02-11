@@ -7,7 +7,7 @@
   <h1 class="title">{tituloDoJogo}</h1>
 
   <a class="menu" href="/level">Jogar</a>
-  <a class="menu" href="/sobre">Discentes</a>
+  <a class="menu" href="/discente">Discentes</a>
 
   <!-- Botão que abre a modal -->
   <button class="menu" on:click={() => (modalAberta = true)}>

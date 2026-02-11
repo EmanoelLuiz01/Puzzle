@@ -18,11 +18,11 @@ export const server_loads = [];
 
 export const dictionary = {
 		"/": [5],
-		"/jogar2": [7,[3]],
-		"/jogar3": [8,[4]],
-		"/jogar": [6,[2]],
-		"/level": [9],
-		"/sobre": [10]
+		"/discente": [6],
+		"/jogar2": [8,[3]],
+		"/jogar3": [9,[4]],
+		"/jogar": [7,[2]],
+		"/level": [10]
 	};
 
 export const hooks = {

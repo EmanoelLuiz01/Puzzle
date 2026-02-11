@@ -9,7 +9,12 @@
   let size = 150; // Tamanho de cada peça em pixels
   
   // Criamos as peças baseadas no ID (0 a 8)
-  let tiles = Array.from({ length: grid * grid }, (_, i) => ({ id: i }));
+
+let tiles : {id: number}[]= []
+ let total = grid * grid;
+ for(let i = 0; i<total;i++){
+  tiles.push({id:i})
+ }
 
   let firstSelection: number | null = null;
   let showImage = false;
@@ -51,9 +56,9 @@
 </script>
  <div class="background"></div>
 <main>
- 
+  
   <h1>Nível 1 - </h1>
-
+<script>/* feito por ia*/</script>
   <div class="board" style="grid-template-columns: repeat({grid}, {size}px);">
     {#each tiles as tile, i (tile.id)}
       <button 

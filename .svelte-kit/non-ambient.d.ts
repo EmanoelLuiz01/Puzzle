@@ -27,20 +27,20 @@ export {};
 
 declare module "$app/types" {
 	export interface AppTypes {
-		RouteId(): "/" | "/jogar2" | "/jogar3" | "/jogar" | "/level" | "/sobre";
+		RouteId(): "/" | "/discente" | "/jogar2" | "/jogar3" | "/jogar" | "/level";
 		RouteParams(): {
 			
 		};
 		LayoutParams(): {
 			"/": Record<string, never>;
+			"/discente": Record<string, never>;
 			"/jogar2": Record<string, never>;
 			"/jogar3": Record<string, never>;
 			"/jogar": Record<string, never>;
-			"/level": Record<string, never>;
-			"/sobre": Record<string, never>
+			"/level": Record<string, never>
 		};
-		Pathname(): "/" | "/jogar2" | "/jogar2/" | "/jogar3" | "/jogar3/" | "/jogar" | "/jogar/" | "/level" | "/level/" | "/sobre" | "/sobre/";
+		Pathname(): "/" | "/discente" | "/discente/" | "/jogar2" | "/jogar2/" | "/jogar3" | "/jogar3/" | "/jogar" | "/jogar/" | "/level" | "/level/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/favicon.png" | "/images/igara.jpeg" | "/images/logoIFPE.png" | "/images/n1.png" | "/images/n2.png" | "/images/n3.png" | string & {};
+		Asset(): "/favicon.png" | "/images/igara.jpeg" | "/images/logoIFPE.png" | "/images/n1.png" | "/images/n2.png" | "/images/n3.jpeg" | "/images/n3.png" | string & {};
 	}
 }

@@ -5,11 +5,15 @@
 
   // Configuração fixa para o Nível 1
   const imagem = "/images/n3.jpeg"; 
-  let grid = 8; // 3x3
+  let grid = 7; // 3x3
   let size = 60; // Tamanho de cada peça em pixels
   
   // Criamos as peças baseadas no ID (0 a 8)
-  let tiles = Array.from({ length: grid * grid }, (_, i) => ({ id: i }));
+  let tiles : {id: number}[]= []
+ let total = grid * grid;
+ for(let i = 0; i<total;i++){
+  tiles.push({id:i})
+ }
 
   let firstSelection: number | null = null;
   let showImage = false;
